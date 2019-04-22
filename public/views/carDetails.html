@@ -1,0 +1,18 @@
+<div class="row" ng-init="getDetails()">
+  	<div class="col-md-12">
+		<h2>{{ manufacturerName }}</h2>
+	</div>
+	<hr>
+  <div class="col-md-12" ng-repeat="data in manufacturerDetails">
+    <img
+      src="http://localhost/{{data.meta_value}}"
+      class="img-responsive"
+      style="max-height: 300px;" ng-if="data.meta_key == 'image'">
+    <ul class="list-group">
+      <li
+        class="list-group-item"ng-if="data.meta_key != 'image'">
+        <b> {{ data.meta_key }}</b> - {{ data.meta_value }}
+      </li>
+    </ul>
+  </div>
+</div>

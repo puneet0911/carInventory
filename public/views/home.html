@@ -1,0 +1,12 @@
+<li ng-init="getData()">
+  
+<a 
+  style="cursor: pointer;"
+  href="#car/{{data.id}}/{{ data.name }}" 
+  class="list-group-item clearfix" ng-repeat="data in manufacturerData">
+  <div class="pull-left">
+    <h4 class="list-group-item-heading">{{ data.name }}</h4>
+  </div>
+  <span class="pull-right"></span>
+</a>
+</li>

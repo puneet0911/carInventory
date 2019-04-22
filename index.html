@@ -1,0 +1,35 @@
+    <!DOCTYPE html>  
+    <html xmlns="http://www.w3.org/1999/xhtml" ng-app="mainApp" >  
+    <head>  
+        <meta charset="utf-8" />
+        <title>Can </title>
+        <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/css/bootstrap.min.css">  
+        <link rel="stylesheet" type="text/css" href="node_modules/angularDatePicker/css/angular-datepicker.css">  
+
+        <script src="node_modules/angular/angular.min.js"></script>  
+        <script src="node_modules/angular/angular-route.min.js"></script>
+        <script src="node_modules/ng-file-upload/dist/ng-file-upload.min.js"></script>
+        <script src="node_modules/ng-file-upload/dist/ng-file-upload-shim.min.js"></script>
+        <script src="node_modules/angularDatePicker/js/angular-datepicker.min.js"></script>
+        <style type="text/css">
+            body{background: #f0f0fc;}
+            .loader_class{width: 50px;height: 50px;}
+            .thumb{width: 430px;height: 310px;}
+            #loader_img{width: 50px;height: 50px;}
+        </style>  
+    </head>  
+    <body>  
+        <div ng-include="'public/includes/header.html'"></div>
+        <span class="ml-3"></span>
+        <div class="container">
+            <div ng-view></div>
+        </div>        
+        <script src="app/app.js"></script>  
+        <script src="app/routes.angular.js"></script>  
+        <script src="app/services/car-inventory.service.js"></script>
+        <script src="app/services/general.service.js"></script>
+        <script src="app/controllers/car-inventory.controller.js"></script>  
+        <script src="app/controllers/other-details.controller.js"></script>  
+        <script src="app/controllers/upload_image.controller.js"></script>  
+    </body>  
+    </html>  
